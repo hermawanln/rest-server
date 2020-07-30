@@ -45,6 +45,33 @@ class Mahasiswa extends REST_Controller {
         
     }
 
+    public function index_delete()
+    {
+        $id = $this->delete('id');
+        
+        if ($id === NULL) {
+            $this->response([
+                'status' => FALSE,
+                'message' => 'provide an id !'
+            ], REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
+        } else {
+            if ($this->mahasiswa->deleteMahasiswa($id) > 0) {
+                // ok
+                $this->response([
+                    'status' => TRUE,
+                    'id' => $id,
+                    'message' => 'deleted.'
+                ], REST_Controller::HTTP_OK); // OK (200) being the HTTP response code
+            } else {
+                // id not found
+                $this->response([
+                    'status' => FALSE,
+                    'message' => 'id not found !'
+                ], REST_Controller::HTTP_BAD_REQUEST); // BAD_REQUEST (400) being the HTTP response code
+            }
+        }
+    }
+
 }
 
 ?>
