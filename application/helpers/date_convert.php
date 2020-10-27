@@ -17,3 +17,9 @@ if ( ! function_exists('full_date')) {
         return date('Y-m-d H:i:s', $date);
     }
 }
+
+if ( ! function_exists('text_date')) {
+    function text_date($date) {
+        return date('H:i, d-M-Y', $date);
+    }
+}
