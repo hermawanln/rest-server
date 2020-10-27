@@ -12,8 +12,8 @@ if ( ! function_exists('simple_date')) {
     }
 }
 
-if ( ! function_exists('simple_date')) {
-    function simple_date($date) {
+if ( ! function_exists('full_date')) {
+    function full_date($date) {
         return date('Y-m-d H:i:s', $date);
     }
 }
