@@ -11,3 +11,9 @@ if ( ! function_exists('simple_date')) {
         return date('Y-m-d', $date);
     }
 }
+
+if ( ! function_exists('simple_date')) {
+    function simple_date($date) {
+        return date('Y-m-d H:i:s', $date);
+    }
+}
