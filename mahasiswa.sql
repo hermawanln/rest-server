@@ -43,7 +43,8 @@ INSERT INTO `mahasiswa` (`id`, `nrp`, `nama`, `email`, `jurusan`) VALUES
 (2, '023040123', 'Erik', 'erik@gmail.com', 'Teknik Industri'),
 (3, '043040321', 'Rommy Fauzi', 'rommy@gmail.com', 'Teknik Planologi'),
 (4, '033040023', 'Fajar Darmawan ', 'fajar@yahoo.com', 'Teknik Informatika'),
-(5, '113040321', 'Ferry Mulyanto', 'ferry@yahoo.com', 'Manajemen');
+(5, '113040321', 'Ferry Mulyanto', 'ferry@yahoo.com', 'Manajemen'),
+(6, '140314141', 'Hermawan Ganteng ', 'hermawanaye@yahoo.com', 'Teknik Informatika Hoki');
 
 --
 -- Indexes for dumped tables
